@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Редактор изображений</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="imageLabel">
+      <property name="text">
+       <string>Изображение не загружено</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <widget class="QMenu" name="menuColor">
+    <property name="title">
+     <string>Цвет</string>
+    </property>
+    <addaction name="actionRed"/>
+    <addaction name="actionGreen"/>
+    <addaction name="actionBlue"/>
+    <addaction name="actionOriginal"/>
+   </widget>
+   <widget class="QMenu" name="menuRotate">
+    <property name="title">
+     <string>Поворот</string>
+    </property>
+    <addaction name="actionRotateLeft"/>
+    <addaction name="actionRotateRight"/>
+   </widget>
+   <addaction name="menuColor"/>
+   <addaction name="menuRotate"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRed">
+   <property name="text">
+    <string>Красный канал</string>
+   </property>
+  </action>
+  <action name="actionGreen">
+   <property name="text">
+    <string>Зелёный канал</string>
+   </property>
+  </action>
+  <action name="actionBlue">
+   <property name="text">
+    <string>Синий канал</string>
+   </property>
+  </action>
+  <action name="actionOriginal">
+   <property name="text">
+    <string>Оригинал</string>
+   </property>
+  </action>
+  <action name="actionRotateLeft">
+   <property name="text">
+    <string>Повернуть влево</string>
+   </property>
+  </action>
+  <action name="actionRotateRight">
+   <property name="text">
+    <string>Повернуть вправо</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
